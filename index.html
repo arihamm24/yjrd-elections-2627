@@ -5,6 +5,36 @@
         <meta lang="en">
         <link href="elections.css" rel="stylesheet">
         <title>YJRD Elections Central</title>
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("March 24, 2026 0:00:00").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="demo"
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "";
+            }
+            }, 1000);
+        </script>
     </head>
     <body>
         <header>
@@ -20,6 +50,10 @@
                 <a href="#pr">PR</a>
                 <a href="#events">Events</a>
             </nav>
+             <div id="countdownModule">
+                <p>Voting Begins in</p>
+                <div id="countdown"></div>
+            </div>
         </header>
         <main>
             <div id="hero">
@@ -42,6 +76,11 @@
                         <h3>Sid Vicious</h3>
                         <a class="videoLink" href="" target="_blank">View Campaign Video</a>
                     </div>
+                    <div class="candidateProfile">
+                        <img src="media/calc.jpg" alt="candidate picture" class="profPic"/>
+                        <h3>Calcaholic</h3>
+                        <a class="videoLink" href="" target="_blank">View Campaign Video</a>
+                    </div>
                     <!--STOCK CARD-->
                     <div class="candidateProfile">
                         <img src="" alt="candidate picture" class="profPic"/>
@@ -57,6 +96,11 @@
                     <div class="candidateProfile">
                         <img alt="candidate picture" class="profPic"/>
                         <h3>Pocket Rocket</h3>
+                        <a class="videoLink" href="" target="_blank">View Campaign Video</a>
+                    </div>
+                     <div class="candidateProfile">
+                        <img src="media/calc.jpg" alt="candidate picture" class="profPic"/>
+                        <h3>Calcaholic</h3>
                         <a class="videoLink" href="" target="_blank">View Campaign Video</a>
                     </div>
                 </div>
@@ -75,6 +119,11 @@
                         <h3>Eggsistential Crisis</h3>
                         <a class="videoLink" href="" target="_blank">View Campaign Video</a>
                     </div>
+                     <div class="candidateProfile">
+                        <img src="media/calc.jpg" alt="candidate picture" class="profPic"/>
+                        <h3>Calcaholic</h3>
+                        <a class="videoLink" href="" target="_blank">View Campaign Video</a>
+                    </div>
                 </div>
             </div>
             <div class="candidates" id="finance">
@@ -89,6 +138,11 @@
                     <div class="candidateProfile">
                         <img src="media/berry.jpg" alt="candidate picture" class="profPic"/>
                         <h3>BlackBerryRamz</h3>
+                        <a class="videoLink" href="" target="_blank">View Campaign Video</a>
+                    </div>
+                     <div class="candidateProfile">
+                        <img src="media/calc.jpg" alt="candidate picture" class="profPic"/>
+                        <h3>Calcaholic</h3>
                         <a class="videoLink" href="" target="_blank">View Campaign Video</a>
                     </div>
                 </div>
@@ -108,6 +162,11 @@
                         <h3>Sid Vicious</h3>
                         <a class="videoLink" href="" target="_blank">View Campaign Video</a>
                     </div>
+                     <div class="candidateProfile">
+                        <img src="media/calc.jpg" alt="candidate picture" class="profPic"/>
+                        <h3>Calcaholic</h3>
+                        <a class="videoLink" href="" target="_blank">View Campaign Video</a>
+                    </div>
                 </div>
             </div>
             <div class="candidates" id="safety">
@@ -123,6 +182,11 @@
                     <div class="candidateProfile">
                         <img src="media/sid.jpg" alt="candidate picture" class="profPic"/>
                         <h3>Sid Vicious</h3>
+                        <a class="videoLink" href="" target="_blank">View Campaign Video</a>
+                    </div>
+                     <div class="candidateProfile">
+                        <img src="media/calc.jpg" alt="candidate picture" class="profPic"/>
+                        <h3>Calcaholic</h3>
                         <a class="videoLink" href="" target="_blank">View Campaign Video</a>
                     </div>
                 </div>
@@ -141,7 +205,13 @@
             <div class="candidates" id="events">
                 <h2 class="divTitle">Events Chair</h2>
                 <p class="positionDesc">The <strong>Events Chair</strong> will be responsible for facilitating team building and bonding events throughout the year, including semester traditions (Rules Party, Photoshoot/Big Little Reveal, Banquet, etc.)</p>
-                <div class="flexContainer"></div>
+                <div class="flexContainer">
+                    <div class="candidateProfile">
+                        <img src="media/calc.jpg" alt="candidate picture" class="profPic"/>
+                        <h3>Calcaholic</h3>
+                        <a class="videoLink" href="" target="_blank">View Campaign Video</a>
+                    </div>
+                </div>
             </div>
         </main>
         <footer>
