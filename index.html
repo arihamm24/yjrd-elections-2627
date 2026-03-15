@@ -25,7 +25,7 @@
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
             // Display the result in the element with id="demo"
-            document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+            document.getElementById("countdown").innerHTML = "<span>Voting Starts in:</span> "+ days + "d " + hours + "h "
             + minutes + "m " + seconds + "s ";
 
             // If the count down is finished, write some text
@@ -38,7 +38,9 @@
     </head>
     <body>
         <header>
-            <img src="media/yjrd.png" height="100px" alt="YJRD LOGO"/>
+            <div id="logo">
+                <img src="media/yjrd.png" height="75px" alt="YJRD LOGO"/>
+            </div>
             <nav>
                 <h4>View Candidates for:</h4>
                 <a href="#president">President</a>
@@ -50,18 +52,9 @@
                 <a href="#pr">PR</a>
                 <a href="#events">Events</a>
             </nav>
-             <div id="countdownModule">
-                <p>Voting Begins in</p>
-                <div id="countdown"></div>
-            </div>
+            <div id="countdown"></div>
         </header>
         <main>
-            <div id="hero">
-                <h1>YJRD Elections Central</h1>
-                <p>Hehe guys I made a website. I thought it'd make elections more fun for me (and maybe y'all too idk).</p>
-                <p>Click the header links to see candidates and descriptions for each of the 8 officer positions. Watch their campaign videos as many times as you want to see who you might think is best fit for the positions</p>
-            </div>
-            <hr/>
             <div class="candidates" id="president">
                 <h2 class="divTitle">President</h2>
                 <p class="positionDesc">The <strong>President</strong> will be the executive officer of the Executive Board and will have general supervision of the affairs of the YJRD and will preside at meetings.  The President will represent the organization at conferences, conventions, tournaments, and faculty or alumni meetings.</p>
@@ -83,7 +76,7 @@
                     </div>
                     <!--STOCK CARD-->
                     <div class="candidateProfile">
-                        <img src="" alt="candidate picture" class="profPic"/>
+                        <img src="media/" alt="candidate picture" class="profPic"/>
                         <h3>Name</h3>
                         <a class="videoLink" href="" target="_blank">View Campaign Video</a>
                     </div>
@@ -94,7 +87,7 @@
                 <p class="positionDesc">The <strong>External Vice-President</strong> will be the junior executive officer and will act on the behalf of the President in the event of their absence.  The External Vice-President will serve as a liaison between the team and on-campus and off-campus organizations.</p>
                 <div class="flexContainer">
                     <div class="candidateProfile">
-                        <img alt="candidate picture" class="profPic"/>
+                        <img src="media/rocket.jpg" alt="candidate picture" class="profPic"/>
                         <h3>Pocket Rocket</h3>
                         <a class="videoLink" href="" target="_blank">View Campaign Video</a>
                     </div>
@@ -103,11 +96,21 @@
                         <h3>Calcaholic</h3>
                         <a class="videoLink" href="" target="_blank">View Campaign Video</a>
                     </div>
+                    <div class="candidateProfile">
+                        <img src="media/zowie.jpg" alt="candidate picture" class="profPic"/>
+                        <h3>Wowie Zowie</h3>
+                        <a class="videoLink" href="" target="_blank">View Campaign Video</a>
+                    </div>
+                     <div class="candidateProfile">
+                        <img src="media/killiope.jpg" alt="candidate picture" class="profPic"/>
+                        <h3>Killiope</h3>
+                        <a class="videoLink" href="" target="_blank">View Campaign Video</a>
+                    </div>
                 </div>
             </div>
             <div class="candidates" id="ivp">
                 <h2 class="divTitle">Internal Vice President</h2>
-                <p class="positionDesc">The <strong>Internal Vice-President</strong>  will record the proceedings of each meeting, distribute the minutes to the members, and maintain the membership roster. The Internal Vice-President will keep in touch with members and oversee member engagement and advise event planning</p>
+                <p class="positionDesc">The <strong>Internal Vice-President</strong>  will record the proceedings of each meeting, distribute the minutes to the members, and maintain the membership roster. The Internal Vice-President will keep in touch with members and oversee member engagement and advise event planning.</p>
                 <div class="flexContainer">
                     <div class="candidateProfile">
                         <img src="media/gory.jpg" alt="candidate picture" class="profPic"/>
@@ -122,6 +125,11 @@
                      <div class="candidateProfile">
                         <img src="media/calc.jpg" alt="candidate picture" class="profPic"/>
                         <h3>Calcaholic</h3>
+                        <a class="videoLink" href="" target="_blank">View Campaign Video</a>
+                    </div>
+                    <div class="candidateProfile">
+                        <img src="media/zowie.jpg" alt="candidate picture" class="profPic"/>
+                        <h3>Wowie Zowie</h3>
                         <a class="videoLink" href="" target="_blank">View Campaign Video</a>
                     </div>
                 </div>
@@ -165,6 +173,11 @@
                      <div class="candidateProfile">
                         <img src="media/calc.jpg" alt="candidate picture" class="profPic"/>
                         <h3>Calcaholic</h3>
+                        <a class="videoLink" href="" target="_blank">View Campaign Video</a>
+                    </div>
+                    <div class="candidateProfile">
+                        <img src="media/zowie.jpg" alt="candidate picture" class="profPic"/>
+                        <h3>Wowie Zowie</h3>
                         <a class="videoLink" href="" target="_blank">View Campaign Video</a>
                     </div>
                 </div>
