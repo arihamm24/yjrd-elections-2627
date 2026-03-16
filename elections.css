@@ -1,6 +1,7 @@
 * {
     --bg: rgb(169, 209, 255);
     --card:rgb(255, 247, 176);
+    --link:rgb(205, 52, 52);
 }
 body {
     background-color: var(--card);
@@ -35,12 +36,30 @@ main {
     font-style: italic;
     font-size: 14pt;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border:2px solid var(--link);
+    border-radius: 20px;
+    padding: 10px;
 }
 nav{
     display:flex;
     flex-direction: row;
     align-items: center;
-    gap: 1rem;
+    justify-content: space-between;
+    gap: 2rem;
+}
+nav > a {
+    font-style:italic;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--link);
+    transition-duration: 0.5ms;
+    font-size: 14pt;
+}
+nav > a:hover {
+   transform: scale(1.2);
+}
+nav > a:visited {
+    color: var(--link);
 }
 .flexContainer {
     display:flex;
@@ -83,7 +102,6 @@ nav{
     text-decoration: none;
     background-color:var(--card);
     border: solid 1px var(--bg);
-    color:var(--bg);
     padding: 8px;
     border-radius:20px;
     transform: scale(2.5);
